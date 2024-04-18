@@ -1,0 +1,583 @@
+[0m19:01:42.519662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A5F5B4F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A61FDEC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A61FDF340>]}
+
+
+============================== 19:01:42.530662 | 3c3edae9-b478-4cbc-87aa-4bad7140ad93 ==============================
+[0m19:01:42.530662 [info ] [MainThread]: Running with dbt=1.7.12
+[0m19:01:42.532667 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m19:02:12.169066 [debug] [MainThread]: Starter project path: D:\Projects\AWS-S3 ETL\aws-S3-pipeline\lib\site-packages\dbt\include\starter_project
+[0m19:02:12.247170 [info ] [MainThread]: 
+Your new dbt project "customersales" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:02:12.251664 [info ] [MainThread]: Setting up your profile.
+[0m19:02:15.144727 [debug] [MainThread]: Command `dbt init` succeeded at 19:02:15.143693 after 32.80 seconds
+[0m19:02:15.144727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A5F5B4F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A61FDEC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A62067820>]}
+[0m19:02:15.145727 [debug] [MainThread]: Flushing usage events
+[0m19:03:46.225678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EB9EB5030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EBC5D46D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EBC5D4BB0>]}
+
+
+============================== 19:03:46.231645 | 85903c1b-02a2-455d-807c-942fcf8dbb7a ==============================
+[0m19:03:46.231645 [info ] [MainThread]: Running with dbt=1.7.12
+[0m19:03:46.233645 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'D:\\Projects\\AWS-S3 ETL', 'log_path': 'D:\\Projects\\AWS-S3 ETL\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:03:46.234672 [info ] [MainThread]: dbt version: 1.7.12
+[0m19:03:46.236644 [info ] [MainThread]: python version: 3.10.11
+[0m19:03:46.237644 [info ] [MainThread]: python path: D:\Projects\AWS-S3 ETL\aws-S3-pipeline\Scripts\python.exe
+[0m19:03:46.240645 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m19:03:46.609645 [info ] [MainThread]: Using profiles dir at D:\Projects\AWS-S3 ETL
+[0m19:03:46.611644 [info ] [MainThread]: Using profiles.yml file at D:\Projects\AWS-S3 ETL\profiles.yml
+[0m19:03:46.613645 [info ] [MainThread]: Using dbt_project.yml file at D:\Projects\AWS-S3 ETL\dbt_project.yml
+[0m19:03:46.622643 [info ] [MainThread]: adapter type: duckdb
+[0m19:03:46.624646 [info ] [MainThread]: adapter version: 1.7.4
+[0m19:03:46.969641 [info ] [MainThread]: Configuration:
+[0m19:03:46.970641 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:03:46.972643 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:03:46.973644 [info ] [MainThread]: Required dependencies:
+[0m19:03:46.974643 [debug] [MainThread]: Executing "git --help"
+[0m19:03:47.035643 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:03:47.036644 [debug] [MainThread]: STDERR: "b''"
+[0m19:03:47.037646 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:03:47.038644 [info ] [MainThread]: Connection:
+[0m19:03:47.039647 [info ] [MainThread]:   database: dev
+[0m19:03:47.040643 [info ] [MainThread]:   schema: main
+[0m19:03:47.041643 [info ] [MainThread]:   path: dev.duckdb
+[0m19:03:47.043647 [info ] [MainThread]:   config_options: None
+[0m19:03:47.044648 [info ] [MainThread]:   extensions: None
+[0m19:03:47.046671 [info ] [MainThread]:   settings: None
+[0m19:03:47.048665 [info ] [MainThread]:   external_root: .
+[0m19:03:47.050645 [info ] [MainThread]:   use_credential_provider: None
+[0m19:03:47.051644 [info ] [MainThread]:   attach: None
+[0m19:03:47.054649 [info ] [MainThread]:   filesystems: None
+[0m19:03:47.057697 [info ] [MainThread]:   remote: None
+[0m19:03:47.059643 [info ] [MainThread]:   plugins: None
+[0m19:03:47.061646 [info ] [MainThread]:   disable_transactions: False
+[0m19:03:47.063679 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m19:03:47.066643 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m19:03:47.067644 [debug] [MainThread]: Using duckdb connection "debug"
+[0m19:03:47.067644 [debug] [MainThread]: On debug: select 1 as id
+[0m19:03:47.069646 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:03:47.098646 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m19:03:47.100647 [debug] [MainThread]: On debug: Close
+[0m19:03:47.105647 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:03:47.109643 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:03:47.111646 [debug] [MainThread]: Command `dbt debug` succeeded at 19:03:47.111646 after 1.02 seconds
+[0m19:03:47.113643 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:03:47.115645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EB9EB5030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EBCBAABC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EBC661A50>]}
+[0m19:03:47.117645 [debug] [MainThread]: Flushing usage events
+[0m05:09:42.511275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018387AB4F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001838A1DF910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001838A1DD120>]}
+
+
+============================== 05:09:42.529269 | 172da9d4-5547-4ec5-9789-371c966f8106 ==============================
+[0m05:09:42.529269 [info ] [MainThread]: Running with dbt=1.7.12
+[0m05:09:42.532271 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'D:\\Projects\\AWS-S3 ETL', 'log_path': 'D:\\Projects\\AWS-S3 ETL\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m05:09:42.533272 [info ] [MainThread]: dbt version: 1.7.12
+[0m05:09:42.535270 [info ] [MainThread]: python version: 3.10.11
+[0m05:09:42.536269 [info ] [MainThread]: python path: D:\Projects\AWS-S3 ETL\aws-S3-pipeline\Scripts\python.exe
+[0m05:09:42.538479 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m05:09:43.075378 [info ] [MainThread]: Using profiles dir at D:\Projects\AWS-S3 ETL
+[0m05:09:43.077381 [info ] [MainThread]: Using profiles.yml file at D:\Projects\AWS-S3 ETL\profiles.yml
+[0m05:09:43.077858 [info ] [MainThread]: Using dbt_project.yml file at D:\Projects\AWS-S3 ETL\dbt_project.yml
+[0m05:09:43.083900 [info ] [MainThread]: adapter type: duckdb
+[0m05:09:43.085050 [info ] [MainThread]: adapter version: 1.7.4
+[0m05:09:43.392850 [info ] [MainThread]: Configuration:
+[0m05:09:43.394847 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m05:09:43.396875 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m05:09:43.398845 [info ] [MainThread]: Required dependencies:
+[0m05:09:43.400846 [debug] [MainThread]: Executing "git --help"
+[0m05:09:43.510843 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:09:43.512849 [debug] [MainThread]: STDERR: "b''"
+[0m05:09:43.513845 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m05:09:43.515849 [info ] [MainThread]: Connection:
+[0m05:09:43.516844 [info ] [MainThread]:   database: dev
+[0m05:09:43.518852 [info ] [MainThread]:   schema: main
+[0m05:09:43.519846 [info ] [MainThread]:   path: dev.duckdb
+[0m05:09:43.523880 [info ] [MainThread]:   config_options: None
+[0m05:09:43.524844 [info ] [MainThread]:   extensions: None
+[0m05:09:43.528851 [info ] [MainThread]:   settings: None
+[0m05:09:43.530846 [info ] [MainThread]:   external_root: .
+[0m05:09:43.533847 [info ] [MainThread]:   use_credential_provider: None
+[0m05:09:43.537846 [info ] [MainThread]:   attach: None
+[0m05:09:43.546847 [info ] [MainThread]:   filesystems: None
+[0m05:09:43.550847 [info ] [MainThread]:   remote: None
+[0m05:09:43.555844 [info ] [MainThread]:   plugins: None
+[0m05:09:43.568862 [info ] [MainThread]:   disable_transactions: False
+[0m05:09:43.571845 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m05:09:43.580848 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m05:09:43.582849 [debug] [MainThread]: Using duckdb connection "debug"
+[0m05:09:43.583847 [debug] [MainThread]: On debug: select 1 as id
+[0m05:09:43.585846 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:09:43.698843 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m05:09:43.699845 [debug] [MainThread]: On debug: Close
+[0m05:09:43.705848 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m05:09:43.708849 [info ] [MainThread]: [32mAll checks passed![0m
+[0m05:09:43.713849 [debug] [MainThread]: Command `dbt debug` succeeded at 05:09:43.712853 after 1.36 seconds
+[0m05:09:43.714847 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m05:09:43.716849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018387AB4F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001838A8A9780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001838A871A20>]}
+[0m05:09:43.717846 [debug] [MainThread]: Flushing usage events
+[0m05:10:00.720472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DB2AB4F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DB51D46D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DB51D6770>]}
+
+
+============================== 05:10:00.725472 | 7e5e57a4-cb40-4b50-bf8c-e22864d6ae8c ==============================
+[0m05:10:00.725472 [info ] [MainThread]: Running with dbt=1.7.12
+[0m05:10:00.727116 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Projects\\AWS-S3 ETL', 'debug': 'False', 'warn_error': 'None', 'log_path': 'D:\\Projects\\AWS-S3 ETL\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m05:10:01.441108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7e5e57a4-cb40-4b50-bf8c-e22864d6ae8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DB5218040>]}
+[0m05:10:01.722104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7e5e57a4-cb40-4b50-bf8c-e22864d6ae8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DB59C9660>]}
+[0m05:10:01.723105 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m05:10:01.753034 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m05:10:01.757065 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m05:10:01.757741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7e5e57a4-cb40-4b50-bf8c-e22864d6ae8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DB532A800>]}
+[0m05:10:03.990711 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m05:10:04.002710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7e5e57a4-cb40-4b50-bf8c-e22864d6ae8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DB5D7FEB0>]}
+[0m05:10:04.051768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7e5e57a4-cb40-4b50-bf8c-e22864d6ae8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DB5CC8160>]}
+[0m05:10:04.053710 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m05:10:04.055710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7e5e57a4-cb40-4b50-bf8c-e22864d6ae8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DB5D7FE20>]}
+[0m05:10:04.059712 [info ] [MainThread]: 
+[0m05:10:04.061712 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m05:10:04.064711 [debug] [MainThread]: Command end result
+[0m05:10:04.092711 [debug] [MainThread]: Command `dbt run` succeeded at 05:10:04.091712 after 3.51 seconds
+[0m05:10:04.093710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DB2AB4F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DB5D2A740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DB58F7AF0>]}
+[0m05:10:04.096715 [debug] [MainThread]: Flushing usage events
+[0m05:19:37.962751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD25BB4FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD282E0D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD282E27D0>]}
+
+
+============================== 05:19:37.969724 | aa4472c8-d03f-47a5-83eb-2f941127f5c6 ==============================
+[0m05:19:37.969724 [info ] [MainThread]: Running with dbt=1.7.12
+[0m05:19:37.971736 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'D:\\Projects\\AWS-S3 ETL', 'log_path': 'D:\\Projects\\AWS-S3 ETL\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m05:19:38.492354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aa4472c8-d03f-47a5-83eb-2f941127f5c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD25447160>]}
+[0m05:19:38.724353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aa4472c8-d03f-47a5-83eb-2f941127f5c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD28A72980>]}
+[0m05:19:38.726355 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m05:19:38.750123 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m05:19:38.792120 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m05:19:38.794151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'aa4472c8-d03f-47a5-83eb-2f941127f5c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD28ACF3D0>]}
+[0m05:19:40.147197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aa4472c8-d03f-47a5-83eb-2f941127f5c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD28E36380>]}
+[0m05:19:40.170159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aa4472c8-d03f-47a5-83eb-2f941127f5c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD28E11EA0>]}
+[0m05:19:40.171164 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m05:19:40.173161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aa4472c8-d03f-47a5-83eb-2f941127f5c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD28E76770>]}
+[0m05:19:40.175193 [info ] [MainThread]: 
+[0m05:19:40.177163 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m05:19:40.179166 [debug] [MainThread]: Command end result
+[0m05:19:40.199164 [debug] [MainThread]: Command `dbt run` succeeded at 05:19:40.197163 after 2.43 seconds
+[0m05:19:40.202163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD25BB4FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD28B72DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD28E76650>]}
+[0m05:19:40.204204 [debug] [MainThread]: Flushing usage events
+[0m06:18:52.143110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E6BBB4FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E6E2E4D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E6E2E67D0>]}
+
+
+============================== 06:18:52.149109 | 6b36562b-6614-46f0-9e44-926787617839 ==============================
+[0m06:18:52.149109 [info ] [MainThread]: Running with dbt=1.7.12
+[0m06:18:52.151112 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'D:\\Projects\\AWS-S3 ETL\\logs', 'version_check': 'True', 'profiles_dir': 'D:\\Projects\\AWS-S3 ETL', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m06:18:52.838494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6b36562b-6614-46f0-9e44-926787617839', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E6B447160>]}
+[0m06:18:53.068542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6b36562b-6614-46f0-9e44-926787617839', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E6EA8E980>]}
+[0m06:18:53.069552 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m06:18:53.081632 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m06:18:53.194386 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:18:53.195387 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:18:53.203387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6b36562b-6614-46f0-9e44-926787617839', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E6EE91600>]}
+[0m06:18:53.217389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6b36562b-6614-46f0-9e44-926787617839', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E6EE4EBC0>]}
+[0m06:18:53.219387 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m06:18:53.220390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b36562b-6614-46f0-9e44-926787617839', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E6EE60670>]}
+[0m06:18:53.223388 [info ] [MainThread]: 
+[0m06:18:53.224387 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m06:18:53.226389 [debug] [MainThread]: Command end result
+[0m06:18:53.245388 [debug] [MainThread]: Command `dbt run` succeeded at 06:18:53.244389 after 1.23 seconds
+[0m06:18:53.246388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E6BBB4FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E6E7EB940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E6EE60460>]}
+[0m06:18:53.248390 [debug] [MainThread]: Flushing usage events
+[0m06:18:53.261389 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m06:25:11.601685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000143848ABD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000143870DEFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000143870DD1B0>]}
+
+
+============================== 06:25:11.606719 | e5ee58e2-0b77-47ff-89dd-210f73f4446f ==============================
+[0m06:25:11.606719 [info ] [MainThread]: Running with dbt=1.7.12
+[0m06:25:11.607688 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'd:\\Projects\\AWS-S3 ETL', 'debug': 'False', 'warn_error': 'None', 'log_path': 'd:\\Projects\\AWS-S3 ETL\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m06:25:12.251683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e5ee58e2-0b77-47ff-89dd-210f73f4446f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014384227160>]}
+[0m06:25:12.517683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e5ee58e2-0b77-47ff-89dd-210f73f4446f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000143870DCE20>]}
+[0m06:25:12.518684 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m06:25:12.529695 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m06:25:12.613685 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:25:12.614688 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:25:12.620683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e5ee58e2-0b77-47ff-89dd-210f73f4446f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014387C8D690>]}
+[0m06:25:12.647689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e5ee58e2-0b77-47ff-89dd-210f73f4446f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014387C4A2C0>]}
+[0m06:25:12.650688 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m06:25:12.652688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e5ee58e2-0b77-47ff-89dd-210f73f4446f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014387C5C700>]}
+[0m06:25:12.655690 [warn ] [MainThread]: The selection criterion 'annual_mall-earnings' does not match any nodes
+[0m06:25:12.664693 [info ] [MainThread]: 
+[0m06:25:12.665687 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m06:25:12.674695 [debug] [MainThread]: Command end result
+[0m06:25:12.712693 [debug] [MainThread]: Command `cli run` succeeded at 06:25:12.711687 after 1.25 seconds
+[0m06:25:12.715689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000143848ABD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000143870DCE20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014387894880>]}
+[0m06:25:12.717686 [debug] [MainThread]: Flushing usage events
+[0m06:25:12.733686 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m06:31:39.280582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD17AA8430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1A2DEF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1A2DD450>]}
+
+
+============================== 06:31:39.286580 | 5a01c8b3-0107-44df-a240-8bb812e6f985 ==============================
+[0m06:31:39.286580 [info ] [MainThread]: Running with dbt=1.7.12
+[0m06:31:39.287544 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'd:\\Projects\\AWS-S3 ETL', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'd:\\Projects\\AWS-S3 ETL\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m06:31:39.857547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5a01c8b3-0107-44df-a240-8bb812e6f985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD17422F20>]}
+[0m06:31:40.185544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5a01c8b3-0107-44df-a240-8bb812e6f985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1A6F60E0>]}
+[0m06:31:40.186544 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m06:31:40.202542 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m06:31:40.315550 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:31:40.317544 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:31:40.318543 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m06:31:40.327542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5a01c8b3-0107-44df-a240-8bb812e6f985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1AE8D600>]}
+[0m06:31:40.347545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5a01c8b3-0107-44df-a240-8bb812e6f985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1AE4E2C0>]}
+[0m06:31:40.350544 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m06:31:40.351545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5a01c8b3-0107-44df-a240-8bb812e6f985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1AE607C0>]}
+[0m06:31:40.353544 [warn ] [MainThread]: The selection criterion 'annual_mall-earnings' does not match any nodes
+[0m06:31:40.357544 [info ] [MainThread]: 
+[0m06:31:40.360546 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m06:31:40.362545 [debug] [MainThread]: Command end result
+[0m06:31:40.379546 [debug] [MainThread]: Command `cli run` succeeded at 06:31:40.378544 after 1.23 seconds
+[0m06:31:40.383560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD17AA8430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1A6F60E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1AA9B700>]}
+[0m06:31:40.385545 [debug] [MainThread]: Flushing usage events
+[0m06:31:40.397543 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m06:38:19.146036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187B11AABC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187B38DEFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187B38DD480>]}
+
+
+============================== 06:38:19.151037 | 678d9ce7-86b8-4cd0-a2fa-9a76e68b3abf ==============================
+[0m06:38:19.151037 [info ] [MainThread]: Running with dbt=1.7.12
+[0m06:38:19.153035 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'd:\\Projects\\AWS-S3 ETL', 'debug': 'False', 'version_check': 'True', 'log_path': 'd:\\Projects\\AWS-S3 ETL\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt ', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m06:38:19.719035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '678d9ce7-86b8-4cd0-a2fa-9a76e68b3abf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187B0A86EF0>]}
+[0m06:38:20.023451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '678d9ce7-86b8-4cd0-a2fa-9a76e68b3abf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187B3C94370>]}
+[0m06:38:20.026452 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m06:38:20.047458 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m06:38:20.168987 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:38:20.169989 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:38:20.169989 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m06:38:20.179984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '678d9ce7-86b8-4cd0-a2fa-9a76e68b3abf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187B448D5D0>]}
+[0m06:38:20.208992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '678d9ce7-86b8-4cd0-a2fa-9a76e68b3abf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187B444EC50>]}
+[0m06:38:20.214985 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m06:38:20.218985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '678d9ce7-86b8-4cd0-a2fa-9a76e68b3abf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187B4460790>]}
+[0m06:38:20.219990 [warn ] [MainThread]: The selection criterion 'annual_mall_earnings' does not match any nodes
+[0m06:38:20.222991 [info ] [MainThread]: 
+[0m06:38:20.223985 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m06:38:20.227986 [debug] [MainThread]: Command end result
+[0m06:38:20.242986 [debug] [MainThread]: Command `cli run` succeeded at 06:38:20.242986 after 1.28 seconds
+[0m06:38:20.250987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187B11AABC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187B39EC700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187B3C035B0>]}
+[0m06:38:20.251987 [debug] [MainThread]: Flushing usage events
+[0m06:38:20.259987 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m06:43:31.174543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C08EA8430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0B5DEF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0B5DD450>]}
+
+
+============================== 06:43:31.180579 | 381c5c41-8109-4ade-b8f4-66cfbdbdbd84 ==============================
+[0m06:43:31.180579 [info ] [MainThread]: Running with dbt=1.7.12
+[0m06:43:31.182546 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'd:\\Projects\\AWS-S3 ETL', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'd:\\Projects\\AWS-S3 ETL\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt ', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m06:43:31.910576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '381c5c41-8109-4ade-b8f4-66cfbdbdbd84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C08822F20>]}
+[0m06:43:32.155579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '381c5c41-8109-4ade-b8f4-66cfbdbdbd84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0B7F60E0>]}
+[0m06:43:32.157545 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m06:43:32.170577 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m06:43:32.270545 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:43:32.271546 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:43:32.271546 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m06:43:32.280546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '381c5c41-8109-4ade-b8f4-66cfbdbdbd84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0C18D600>]}
+[0m06:43:32.296546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '381c5c41-8109-4ade-b8f4-66cfbdbdbd84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0C14E2C0>]}
+[0m06:43:32.298580 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m06:43:32.299546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '381c5c41-8109-4ade-b8f4-66cfbdbdbd84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0C1607C0>]}
+[0m06:43:32.301542 [warn ] [MainThread]: The selection criterion 'avg_age_customers' does not match any nodes
+[0m06:43:32.304549 [info ] [MainThread]: 
+[0m06:43:32.305551 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m06:43:32.309549 [debug] [MainThread]: Command end result
+[0m06:43:32.403547 [debug] [MainThread]: Command `cli run` succeeded at 06:43:32.402544 after 1.37 seconds
+[0m06:43:32.404547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C08EA8430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0B7F60E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0BD93700>]}
+[0m06:43:32.406544 [debug] [MainThread]: Flushing usage events
+[0m06:43:32.419547 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m06:52:22.700650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F1EA8430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F46DEF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F46DD450>]}
+
+
+============================== 06:52:22.705614 | 82c82c4f-8f73-4fe2-881f-048673a1c9e9 ==============================
+[0m06:52:22.705614 [info ] [MainThread]: Running with dbt=1.7.12
+[0m06:52:22.706617 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'd:\\Projects\\AWS-S3 ETL\\logs', 'profiles_dir': 'd:\\Projects\\AWS-S3 ETL', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt ', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m06:52:23.268619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '82c82c4f-8f73-4fe2-881f-048673a1c9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F1826F20>]}
+[0m06:52:23.649623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '82c82c4f-8f73-4fe2-881f-048673a1c9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F4AF60E0>]}
+[0m06:52:23.653614 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m06:52:23.671617 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m06:52:23.787614 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:52:23.788615 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:52:23.789616 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m06:52:23.804615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '82c82c4f-8f73-4fe2-881f-048673a1c9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F528D600>]}
+[0m06:52:23.832623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '82c82c4f-8f73-4fe2-881f-048673a1c9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F524E2C0>]}
+[0m06:52:23.838618 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m06:52:23.842619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '82c82c4f-8f73-4fe2-881f-048673a1c9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F52607C0>]}
+[0m06:52:23.845619 [warn ] [MainThread]: The selection criterion 'avg_age_customers' does not match any nodes
+[0m06:52:23.849619 [info ] [MainThread]: 
+[0m06:52:23.850616 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m06:52:23.852617 [debug] [MainThread]: Command end result
+[0m06:52:23.872620 [debug] [MainThread]: Command `cli run` succeeded at 06:52:23.871644 after 1.32 seconds
+[0m06:52:23.875624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F1EA8430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F4AF60E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F4E9B700>]}
+[0m06:52:23.878617 [debug] [MainThread]: Flushing usage events
+[0m06:57:11.769084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E42A8430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E69DEF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E69DD0C0>]}
+
+
+============================== 06:57:11.776089 | f375825e-2c53-4c57-a163-4f5cc6d4d7dd ==============================
+[0m06:57:11.776089 [info ] [MainThread]: Running with dbt=1.7.12
+[0m06:57:11.778085 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'd:\\Projects\\AWS-S3 ETL', 'log_path': 'd:\\Projects\\AWS-S3 ETL\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt ', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m06:57:12.491177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f375825e-2c53-4c57-a163-4f5cc6d4d7dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E3B52F20>]}
+[0m06:57:12.760147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f375825e-2c53-4c57-a163-4f5cc6d4d7dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E6BF60E0>]}
+[0m06:57:12.762152 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m06:57:12.779150 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m06:57:12.893145 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:57:12.894147 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:57:12.895143 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m06:57:12.907157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f375825e-2c53-4c57-a163-4f5cc6d4d7dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E758D600>]}
+[0m06:57:12.935148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f375825e-2c53-4c57-a163-4f5cc6d4d7dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E754E2C0>]}
+[0m06:57:12.937143 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m06:57:12.940147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f375825e-2c53-4c57-a163-4f5cc6d4d7dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E755C7C0>]}
+[0m06:57:12.942160 [warn ] [MainThread]: The selection criterion 'avg_age_customers' does not match any nodes
+[0m06:57:12.945143 [info ] [MainThread]: 
+[0m06:57:12.949143 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m06:57:12.952154 [debug] [MainThread]: Command end result
+[0m06:57:12.978145 [debug] [MainThread]: Command `cli run` succeeded at 06:57:12.977146 after 1.37 seconds
+[0m06:57:12.979141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E42A8430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E6BF60E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E719B700>]}
+[0m06:57:12.981145 [debug] [MainThread]: Flushing usage events
+[0m07:03:10.386614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200CD7B4F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200CFEE0D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200CFEE2890>]}
+
+
+============================== 07:03:10.391615 | cca609e5-7254-4c54-bd20-8160abd2ae67 ==============================
+[0m07:03:10.391615 [info ] [MainThread]: Running with dbt=1.7.12
+[0m07:03:10.392616 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'D:\\Projects\\AWS-S3 ETL', 'log_path': 'D:\\Projects\\AWS-S3 ETL\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt build', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m07:03:10.903618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cca609e5-7254-4c54-bd20-8160abd2ae67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200CD03AF20>]}
+[0m07:03:11.193613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cca609e5-7254-4c54-bd20-8160abd2ae67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200D069F970>]}
+[0m07:03:11.195615 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m07:03:11.211616 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m07:03:11.318615 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:03:11.319616 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:03:11.320618 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m07:03:11.329616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cca609e5-7254-4c54-bd20-8160abd2ae67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200D0A95630>]}
+[0m07:03:11.345616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cca609e5-7254-4c54-bd20-8160abd2ae67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200D0A53340>]}
+[0m07:03:11.347616 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m07:03:11.351620 [info ] [MainThread]: 
+[0m07:03:11.352616 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m07:03:11.354616 [debug] [MainThread]: Command end result
+[0m07:03:11.369616 [debug] [MainThread]: Command `dbt build` succeeded at 07:03:11.369616 after 1.11 seconds
+[0m07:03:11.371616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200CD7B4F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200D02288E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200D0A64760>]}
+[0m07:03:11.373618 [debug] [MainThread]: Flushing usage events
+[0m07:03:34.350256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC2EB5030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC55E0D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC55E2890>]}
+
+
+============================== 07:03:34.355222 | cdebe8a9-648d-4585-b931-d77e2c05444d ==============================
+[0m07:03:34.355222 [info ] [MainThread]: Running with dbt=1.7.12
+[0m07:03:34.356223 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Projects\\AWS-S3 ETL', 'debug': 'False', 'version_check': 'True', 'log_path': 'D:\\Projects\\AWS-S3 ETL\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m07:03:34.886257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cdebe8a9-648d-4585-b931-d77e2c05444d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC2823160>]}
+[0m07:03:35.125258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cdebe8a9-648d-4585-b931-d77e2c05444d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC5D9F970>]}
+[0m07:03:35.127227 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m07:03:35.148227 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m07:03:35.270228 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:03:35.271225 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:03:35.272225 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m07:03:35.285224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cdebe8a9-648d-4585-b931-d77e2c05444d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC6191630>]}
+[0m07:03:35.309233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cdebe8a9-648d-4585-b931-d77e2c05444d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC614E200>]}
+[0m07:03:35.312268 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m07:03:35.316227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdebe8a9-648d-4585-b931-d77e2c05444d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC604C7F0>]}
+[0m07:03:35.320225 [info ] [MainThread]: 
+[0m07:03:35.323226 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m07:03:35.325224 [debug] [MainThread]: Command end result
+[0m07:03:35.344229 [debug] [MainThread]: Command `dbt run` succeeded at 07:03:35.344229 after 1.15 seconds
+[0m07:03:35.348224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC2EB5030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC57288E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC5D9F760>]}
+[0m07:03:35.350226 [debug] [MainThread]: Flushing usage events
+[0m07:08:10.892917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012F032B5030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012F059E11B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012F059E1FF0>]}
+
+
+============================== 07:08:10.897949 | 5ac9d8fd-6b4a-4f1e-ab86-77fc7aef4970 ==============================
+[0m07:08:10.897949 [info ] [MainThread]: Running with dbt=1.7.12
+[0m07:08:10.899916 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'D:\\Projects\\AWS-S3 ETL', 'log_path': 'D:\\Projects\\AWS-S3 ETL\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt build', 'send_anonymous_usage_stats': 'True'}
+[0m07:08:11.500280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5ac9d8fd-6b4a-4f1e-ab86-77fc7aef4970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012F05B0D210>]}
+[0m07:08:11.742282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5ac9d8fd-6b4a-4f1e-ab86-77fc7aef4970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012F05B28EB0>]}
+[0m07:08:11.744282 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m07:08:11.754317 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m07:08:11.838316 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:08:11.839316 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:08:11.839316 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m07:08:11.847316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ac9d8fd-6b4a-4f1e-ab86-77fc7aef4970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012F065956F0>]}
+[0m07:08:11.872287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5ac9d8fd-6b4a-4f1e-ab86-77fc7aef4970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012F0654F4F0>]}
+[0m07:08:11.874322 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m07:08:11.878315 [info ] [MainThread]: 
+[0m07:08:11.879282 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m07:08:11.880316 [debug] [MainThread]: Command end result
+[0m07:08:11.903282 [debug] [MainThread]: Command `dbt build` succeeded at 07:08:11.902283 after 1.14 seconds
+[0m07:08:11.905282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012F032B5030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012F05B28EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012F06074CA0>]}
+[0m07:08:11.907284 [debug] [MainThread]: Flushing usage events
+[0m07:08:20.383784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001752E8B5030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017530FE0D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017530FE2890>]}
+
+
+============================== 07:08:20.387783 | a689f7b3-20cf-433f-82fc-d17950db0f5a ==============================
+[0m07:08:20.387783 [info ] [MainThread]: Running with dbt=1.7.12
+[0m07:08:20.389784 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Projects\\AWS-S3 ETL', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'D:\\Projects\\AWS-S3 ETL\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m07:08:20.881815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a689f7b3-20cf-433f-82fc-d17950db0f5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001752E123160>]}
+[0m07:08:21.156786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a689f7b3-20cf-433f-82fc-d17950db0f5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001753179F970>]}
+[0m07:08:21.157787 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m07:08:21.169783 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m07:08:21.281784 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:08:21.281784 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:08:21.283786 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m07:08:21.296785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a689f7b3-20cf-433f-82fc-d17950db0f5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017531B95630>]}
+[0m07:08:21.328790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a689f7b3-20cf-433f-82fc-d17950db0f5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017531B4E200>]}
+[0m07:08:21.333788 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m07:08:21.335787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a689f7b3-20cf-433f-82fc-d17950db0f5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017531A507F0>]}
+[0m07:08:21.338782 [info ] [MainThread]: 
+[0m07:08:21.339785 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m07:08:21.342791 [debug] [MainThread]: Command end result
+[0m07:08:21.376787 [debug] [MainThread]: Command `dbt run` succeeded at 07:08:21.375792 after 1.11 seconds
+[0m07:08:21.377786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001752E8B5030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175311288E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001753179F760>]}
+[0m07:08:21.378785 [debug] [MainThread]: Flushing usage events
+[0m07:21:01.526529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5B12B5030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5B39E0D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5B39E2890>]}
+
+
+============================== 07:21:01.531279 | f78f91a6-bee4-4407-9b3a-be9df2b165ae ==============================
+[0m07:21:01.531279 [info ] [MainThread]: Running with dbt=1.7.12
+[0m07:21:01.533231 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Projects\\AWS-S3 ETL', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'D:\\Projects\\AWS-S3 ETL\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m07:21:02.035227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f78f91a6-bee4-4407-9b3a-be9df2b165ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5B0B43160>]}
+[0m07:21:02.300033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f78f91a6-bee4-4407-9b3a-be9df2b165ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5B419F970>]}
+[0m07:21:02.303031 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m07:21:02.322281 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m07:21:02.445119 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:21:02.447229 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:21:02.448459 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m07:21:02.459085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f78f91a6-bee4-4407-9b3a-be9df2b165ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5B4595630>]}
+[0m07:21:02.486078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f78f91a6-bee4-4407-9b3a-be9df2b165ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5B454E200>]}
+[0m07:21:02.488082 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m07:21:02.489150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f78f91a6-bee4-4407-9b3a-be9df2b165ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5B44507F0>]}
+[0m07:21:02.492075 [info ] [MainThread]: 
+[0m07:21:02.493077 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m07:21:02.495076 [debug] [MainThread]: Command end result
+[0m07:21:02.513077 [debug] [MainThread]: Command `dbt run` succeeded at 07:21:02.513077 after 1.11 seconds
+[0m07:21:02.514255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5B12B5030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5B3B288E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5B419F760>]}
+[0m07:21:02.516265 [debug] [MainThread]: Flushing usage events
+[0m07:31:29.641711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0A81B4F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0AA8E1A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0AA8E06D0>]}
+
+
+============================== 07:31:29.646678 | 612497c5-ea1d-4d78-b589-7971beaf71ad ==============================
+[0m07:31:29.646678 [info ] [MainThread]: Running with dbt=1.7.12
+[0m07:31:29.648677 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Projects\\AWS-S3 ETL', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'D:\\Projects\\AWS-S3 ETL\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m07:31:30.211765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '612497c5-ea1d-4d78-b589-7971beaf71ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0AA918040>]}
+[0m07:31:30.435737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '612497c5-ea1d-4d78-b589-7971beaf71ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0AB0C9660>]}
+[0m07:31:30.437734 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m07:31:30.449735 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m07:31:30.548771 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:31:30.549769 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:31:30.550378 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m07:31:30.557773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '612497c5-ea1d-4d78-b589-7971beaf71ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0AB4915A0>]}
+[0m07:31:30.574737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '612497c5-ea1d-4d78-b589-7971beaf71ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0AB44EB00>]}
+[0m07:31:30.579741 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m07:31:30.583737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '612497c5-ea1d-4d78-b589-7971beaf71ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0AB14C610>]}
+[0m07:31:30.586739 [info ] [MainThread]: 
+[0m07:31:30.588404 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m07:31:30.590403 [debug] [MainThread]: Command end result
+[0m07:31:30.606404 [debug] [MainThread]: Command `dbt run` succeeded at 07:31:30.606404 after 1.12 seconds
+[0m07:31:30.608403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0A81B4F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0AACA9180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0AB02FE20>]}
+[0m07:31:30.609851 [debug] [MainThread]: Flushing usage events
+[0m07:31:52.860989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268ED6A9420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268EFDDEEC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268EFDDC760>]}
+
+
+============================== 07:31:52.871030 | 6b5bc43a-8ca2-4589-9ba5-edd4f5793c59 ==============================
+[0m07:31:52.871030 [info ] [MainThread]: Running with dbt=1.7.12
+[0m07:31:52.874020 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'd:\\Projects\\AWS-S3 ETL', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'd:\\Projects\\AWS-S3 ETL\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m07:31:53.444053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6b5bc43a-8ca2-4589-9ba5-edd4f5793c59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268EFEE5C30>]}
+[0m07:31:53.777274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6b5bc43a-8ca2-4589-9ba5-edd4f5793c59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268EFF94F10>]}
+[0m07:31:53.779276 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m07:31:53.792273 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m07:31:53.885588 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:31:53.886586 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:31:53.887664 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m07:31:53.895585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6b5bc43a-8ca2-4589-9ba5-edd4f5793c59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268F09916C0>]}
+[0m07:31:53.911701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6b5bc43a-8ca2-4589-9ba5-edd4f5793c59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268F094ECB0>]}
+[0m07:31:53.913591 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m07:31:53.915587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b5bc43a-8ca2-4589-9ba5-edd4f5793c59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268F0960880>]}
+[0m07:31:53.916833 [warn ] [MainThread]: The selection criterion 'model1' does not match any nodes
+[0m07:31:53.919586 [info ] [MainThread]: 
+[0m07:31:53.920880 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m07:31:53.922687 [debug] [MainThread]: Command end result
+[0m07:31:53.942593 [debug] [MainThread]: Command `cli run` succeeded at 07:31:53.942047 after 1.24 seconds
+[0m07:31:53.942593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268ED6A9420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268EFF94F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268F0598CA0>]}
+[0m07:31:53.944759 [debug] [MainThread]: Flushing usage events
+[0m08:18:59.102359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFFF0ABD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF817DEFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF817DD1E0>]}
+
+
+============================== 08:18:59.107826 | c0a289cc-5b48-4bf4-a6ed-203f303eaca1 ==============================
+[0m08:18:59.107826 [info ] [MainThread]: Running with dbt=1.7.12
+[0m08:18:59.110330 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'd:\\Projects\\AWS-S3 ETL', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'd:\\Projects\\AWS-S3 ETL\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m08:18:59.659124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c0a289cc-5b48-4bf4-a6ed-203f303eaca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFFE722F50>]}
+[0m08:18:59.956033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c0a289cc-5b48-4bf4-a6ed-203f303eaca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF81F9B940>]}
+[0m08:18:59.958029 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m08:18:59.972025 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m08:19:00.096126 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:19:00.097127 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:19:00.098129 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m08:19:00.105127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c0a289cc-5b48-4bf4-a6ed-203f303eaca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF8238D630>]}
+[0m08:19:00.126130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c0a289cc-5b48-4bf4-a6ed-203f303eaca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF8234E260>]}
+[0m08:19:00.127130 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m08:19:00.130683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c0a289cc-5b48-4bf4-a6ed-203f303eaca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF8235C7F0>]}
+[0m08:19:00.133136 [warn ] [MainThread]: The selection criterion 'avg_age_customers' does not match any nodes
+[0m08:19:00.137558 [info ] [MainThread]: 
+[0m08:19:00.144229 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m08:19:00.148241 [debug] [MainThread]: Command end result
+[0m08:19:00.168132 [debug] [MainThread]: Command `cli run` succeeded at 08:19:00.168132 after 1.21 seconds
+[0m08:19:00.170131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFFF0ABD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF817DDF30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF81EEC7C0>]}
+[0m08:19:00.172134 [debug] [MainThread]: Flushing usage events
+[0m09:08:37.005643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002630ABB4F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002630D2D9A20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002630D2D9060>]}
+
+
+============================== 09:08:37.013033 | da1569c0-9548-488a-934f-f4e16984922d ==============================
+[0m09:08:37.013033 [info ] [MainThread]: Running with dbt=1.7.12
+[0m09:08:37.014183 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Projects\\AWS-S3 ETL', 'debug': 'False', 'version_check': 'True', 'log_path': 'D:\\Projects\\AWS-S3 ETL\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m09:08:37.550155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'da1569c0-9548-488a-934f-f4e16984922d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002630D31B8E0>]}
+[0m09:08:37.854909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'da1569c0-9548-488a-934f-f4e16984922d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002630D2D9330>]}
+[0m09:08:37.858561 [info ] [MainThread]: Registered adapter: duckdb=1.7.4
+[0m09:08:37.885142 [debug] [MainThread]: checksum: fa6823f8c585472225a314a12a364bc70861436aed1c3e1f496a6b09c5e31653, vars: {}, profile: , target: , version: 1.7.12
+[0m09:08:38.116024 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:08:38.117024 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:08:38.121024 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customersales.example
+[0m09:08:38.163171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'da1569c0-9548-488a-934f-f4e16984922d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002630DE95570>]}
+[0m09:08:38.227023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'da1569c0-9548-488a-934f-f4e16984922d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002630DE52140>]}
+[0m09:08:38.229024 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m09:08:38.236023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'da1569c0-9548-488a-934f-f4e16984922d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002630DB4C5E0>]}
+[0m09:08:38.239642 [info ] [MainThread]: 
+[0m09:08:38.244226 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m09:08:38.248226 [debug] [MainThread]: Command end result
+[0m09:08:38.292318 [debug] [MainThread]: Command `dbt run` succeeded at 09:08:38.291317 after 1.41 seconds
+[0m09:08:38.298317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002630ABB4F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002630D2D9330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002630DB4C3D0>]}
+[0m09:08:38.300357 [debug] [MainThread]: Flushing usage events

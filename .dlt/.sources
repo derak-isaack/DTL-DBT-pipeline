@@ -1,0 +1,32 @@
+engine_version: 1
+sources:
+  filesystem:
+    is_dirty: false
+    last_commit_sha: 377767bc5eb05eb00ac307980bd523d250509549
+    last_commit_timestamp: '2024-04-12T16:36:48+02:00'
+    files:
+      filesystem\helpers.py:
+        commit_sha: 377767bc5eb05eb00ac307980bd523d250509549
+        git_sha: 8bd11705d187ab19597cd1e999e8004bdaa1573e
+        sha3_256: 023b00d3fde6bd6b99e8e1870edc16b4e79727fca7b78ae47e240b5875900157
+      filesystem\readers.py:
+        commit_sha: 377767bc5eb05eb00ac307980bd523d250509549
+        git_sha: bd5f3575c2331d77744b773444a1de9f4efdc97d
+        sha3_256: e80a3fc98ca796872c06f000e10a1b39d1e15a004c0e6fc510f67592f366dd44
+      filesystem\README.md:
+        commit_sha: 377767bc5eb05eb00ac307980bd523d250509549
+        git_sha: 4a57650df7cfcc49e3c10540b3f870390c597a45
+        sha3_256: efa6de06cd82b9becd617f92e2643d64bf4058908b3b0f1dd74d468d81d3843d
+      filesystem\settings.py:
+        commit_sha: 377767bc5eb05eb00ac307980bd523d250509549
+        git_sha: 33fcb55b5f694667d865d498c6a6481cf299b504
+        sha3_256: d7ed0e6a369e310100a3a19ba85c6c7f38ddfffad5ff2b9b788d7cc7ad3a0e51
+      filesystem\setup_script_gcp_oauth.py:
+        commit_sha: 377767bc5eb05eb00ac307980bd523d250509549
+        git_sha: a3ae7ac145d388eb4eefd3e7f322502c33936d32
+        sha3_256: 67fb9db36890d2c87985e80a39300bd87650226132d623458660fc8a99105758
+      filesystem\__init__.py:
+        commit_sha: 377767bc5eb05eb00ac307980bd523d250509549
+        git_sha: c6452543ed36d80bef8c09992dbcae132320c1ca
+        sha3_256: 41ac8dd3ab823b0cf38138eee722b09aee324e84742403b9e0b67236893ce3e4
+    dlt_version_constraint: '>=0.4.3a0'
