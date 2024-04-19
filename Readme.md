@@ -27,7 +27,7 @@ ETL and ELT data pipelines offer simplicity and automation for organizations tha
 
 * `Shopping patterns across various malls.`
 
-The extracted data from the queries can be found `[here](customersales/seeds).`
+The extracted data from the queries can be found [here](customersales/seeds).
 
 ### <div style="padding: 20px;color:white;margin:10;font-size:90%;text-align:left;display:fill;border-radius:10px;overflow:hidden;background-image: url(https://w0.peakpx.com/wallpaper/957/661/HD-wallpaper-white-marble-white-stone-texture-marble-stone-background-white-stone.jpg)"><b><span style='color:black'> Data Extraction</span></b> </div>
 
@@ -35,6 +35,29 @@ The `Data Load Tool` open source library offers very efficient data pipelines of
 
 Data for this project was ingested from `AWS S3` bucket. To get started with setting up the credentials to allow access by third oarty applications to your data, reading [dlt documentation](https://dlthub.com/docs/dlt-ecosystem/destinations/filesystem#aws-s3) provides a clear step by step process for the setup. 
 
-After setting up everything, run the following commands in order:
+After setting up everything, run the following commands in order to get started with `dlt`:
 
-1. 
+1. `pip install requirements.txt`
+
+2. `dlt init filesystem duckdb`
+
+3. To run your pipeline, run `python filesystem.py` in the terminal. This downloads a duckdb file in the working directory which contains information about the data source. 
+
+4. To have an interaction with the data, run `dlt pipeline filesystem show` which opens streamlit on the local browser. 
+
+For a more conclusive and extensive approach, reading [data sources](https://dlthub.com/docs/dlt-ecosystem/verified-sources/) provides more information on how to connect to several data sources. 
+
+
+### <div style="padding: 20px;color:white;margin:10;font-size:90%;text-align:left;display:fill;border-radius:10px;overflow:hidden;background-image: url(https://w0.peakpx.com/wallpaper/957/661/HD-wallpaper-white-marble-white-stone-texture-marble-stone-background-white-stone.jpg)"><b><span style='color:black'> Data Transformation</span></b> </div>
+
+Transformation of data is necessary because it needs to be error free for use by the data team to extract meaningful insights more fast than the old traditional formarts. Transformation is done using the `Data Build Tool` which is an open source platform that offers more flexibility for transformation of data in data pipelines. 
+
+To open up the `Streamlit dashboard` to get a sneak peak of data and run simple queries, run the line `dlt pipeline filesystem show`.
+
+This tool leverages on using `Jinja` to simplify the process of creating sql queries to handle various data objectives. It implements `DRY`-`Dont Repeat Yourself` approach which allows inheritance of `sql tables and queries`.
+
+### <div style="padding: 20px;color:white;margin:10;font-size:90%;text-align:left;display:fill;border-radius:10px;overflow:hidden;background-image: url(https://w0.peakpx.com/wallpaper/957/661/HD-wallpaper-white-marble-white-stone-texture-marble-stone-background-white-stone.jpg)"><b><span style='color:black'> Data Loading</span></b> </div>
+
+`DuckDb` is an embedded database which has better computational power at handling big datasets and also creates them on the fly without necessarilly loading it in `RDBMs`. It also offers compression of big files therefore coming in handy in the event of storage inefficiencies. 
+
+It can also be connected to visualization and dashboarding tools after installation of required drivers connections. 
