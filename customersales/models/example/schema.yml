@@ -1,0 +1,50 @@
+
+version: 2
+
+models:
+  - name: average_age_customers
+    description: "A starter dbt model"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: monthly_earnings
+    description: "A starter dbt model"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: mall_earnings
+    description: "A starter dbt model"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: annual_mall_earnings
+    description: "A starter dbt model"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  
+  - name: category_mall_sales
+    description: "A starter dbt model"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+
