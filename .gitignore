@@ -9,5 +9,5 @@ login.py
 **/*.py[cod]
 **/*$py.class
 # ignore duckdb
-*.duckdb
+
 *.wal
