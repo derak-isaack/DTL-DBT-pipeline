@@ -61,3 +61,23 @@ This tool leverages on using `Jinja` to simplify the process of creating sql que
 `DuckDb` is an embedded database which has better computational power at handling big datasets and also creates them on the fly without necessarilly loading it in `RDBMs`. It also offers compression of big files therefore coming in handy in the event of storage inefficiencies. 
 
 It can also be connected to visualization and dashboarding tools after installation of required drivers connections. 
+
+### <div style="padding: 20px;color:white;margin:10;font-size:90%;text-align:left;display:fill;border-radius:10px;overflow:hidden;background-image: url(https://w0.peakpx.com/wallpaper/957/661/HD-wallpaper-white-marble-white-stone-texture-marble-stone-background-white-stone.jpg)"><b><span style='color:black'> Streamlit dashboard</span></b> </div>
+
+To create an interactive end-to-end project, a streamlit dashboard provides an efficient `User Interaction & Experience` because of its simple navigable page. The dashboard has filters for: 
+
+1. `Shopping mall`
+
+2. `Year`
+
+3. `Month`
+
+4. `Product category`
+
+5. `Gender` & `Payment method`
+
+With each filter, the visuals adjust accordingly to the filter applied. The application can be found on (link)[] with this ![snapshot](<Screenshot (797).png>)
+
+### <div style="padding: 20px;color:white;margin:10;font-size:90%;text-align:left;display:fill;border-radius:10px;overflow:hidden;background-image: url(https://w0.peakpx.com/wallpaper/957/661/HD-wallpaper-white-marble-white-stone-texture-marble-stone-background-white-stone.jpg)"><b><span style='color:black'> Future steps</span></b> </div>
+
+Integrate an `authorization` and `login page` to ensure different users access different contents and analysis of the application. 

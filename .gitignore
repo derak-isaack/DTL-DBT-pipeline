@@ -1,6 +1,8 @@
 # ignore secrets, virtual environments and typical python compilation artifacts
 secrets.toml
 aws-S3-pipeline
+credentials.yml
+login.py 
 # ignore basic python artifacts
 .env
 **/__pycache__/
