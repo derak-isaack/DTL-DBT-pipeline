@@ -13,7 +13,7 @@ st.set_page_config(page_title="Shopping mall sales dashboard",
                     )
 
 
-input_file = 'D:\Projects\AWS-S3 ETL\standard_filesystem2.duckdb'
+input_file = 'standard_filesystem2.duckdb'
 database = duckdb.connect(database=input_file)
 
 query_1 = database.query("SELECT * FROM customer_shopping_data.customer_data").to_df()
