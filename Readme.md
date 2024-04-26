@@ -76,7 +76,7 @@ To create an interactive end-to-end project, a streamlit dashboard provides an e
 
 5. `Gender` & `Payment method`
 
-With each filter, the visuals adjust accordingly to the filter applied. The application can be found on (link)[] with this ![snapshot](<Screenshot (797).png>)
+With each filter, the visuals adjust accordingly to the filter applied. The application can be found (here)[https://dtl-dbt-pipeline-gyz2smtjzi8bdoqqfptsi8.streamlit.app/] with this ![snapshot](<Screenshot (797).png>)
 
 ### <div style="padding: 20px;color:white;margin:10;font-size:90%;text-align:left;display:fill;border-radius:10px;overflow:hidden;background-image: url(https://w0.peakpx.com/wallpaper/957/661/HD-wallpaper-white-marble-white-stone-texture-marble-stone-background-white-stone.jpg)"><b><span style='color:black'> Future steps</span></b> </div>
 
